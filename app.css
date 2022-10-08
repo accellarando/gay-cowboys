@@ -23,6 +23,7 @@
 	background-size:1280px 720px;
 }
 #instructions{
+	background-image: url("images/Instructions Page.png");
 	display:none;
 	position:absolute;
 	top:0;
@@ -45,6 +46,7 @@
 }
 #end{
 	display:none;
+	background-image:url("images/Ending Page.png");
 	position:absolute;
 	top:0;
 	margin-left:auto;
