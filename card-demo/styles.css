@@ -45,30 +45,32 @@ body {
 }
 
 /*#front.animate {*/
-/* .card.zoom { */
-    /* -ms-transform: scale(1, 1); IE 9 */
-    /* -webkit-transform: scale(1, 1); Safari */
-    /* transform: scale(1, 1); */
+ .card.zoom { 
+    -ms-transform: scale(1, 1); /*IE 9*/
+    -webkit-transform: scale(1, 1); /*Safari*/
+    transform: scale(1, 1);
     
-    /* transition: transform 2s; */
-/* } */
+    transition: transform 2s;
+ } 
 
+/*
 .card.zoom{
     position: fixed;
     top: 50%;
     left: 50%;
-    /* margin-top: -50%;
-    margin-left: -50%; */
+     margin-top: -50%;
+    margin-left: -50%; 
     transform: translate(-50%, -50%);   
 
     
-    -ms-transform: scale(1, 1); /* IE 9 */
-    -webkit-transform: scale(1, 1); /* Safari */
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
     
     transition: transform 2s;
 }
 
+*/
 /*#front.animate {*/
 .card.animate {
 	transform: rotateY(180deg);
