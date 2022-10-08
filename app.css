@@ -30,6 +30,8 @@
 	margin-left:auto;
 	margin-right:auto;
 	width:1280px;
+	height:720px;
+	background-size:1280px 720px;
 }
 #saloon{
 	display:none;
@@ -53,7 +55,6 @@
 	margin-right:auto;
 	width:1280px;
 	height:720px;
-	background-image:url("images/menu.jpg");
 	background-size:1280px 720px;
 }
 .center{
