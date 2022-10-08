@@ -99,155 +99,34 @@
 	width:100px;
 	cursor:pointer;
 }
-.hat{
+.hat.item{
 	left:440px;
 	top:164px;
 	transform:rotate(12deg);
 }
-.pietin{
+.pietin.item{
 	left:750px;
 	top:327px;
 }
-.poem{
+.poem.item{
 	left:1141px;
 	top:445px;
 	transform:rotate(-7deg);
 }
-.mustache{
+.mustache.item{
 	left:245px;
 	top:431px;
 }
 
-
-/*** Gabby's CSS ***/
- .card.zoom { 
-    -ms-transform: scale(5, 5); /*IE 9*/
-    -webkit-transform: scale(5, 5); /*Safari*/
-    transform: scale(5, 5);
-    
-    transition: transform 2s;
- } 
-
-.card.animate {
-    -ms-transform: scale(5, 5); /*IE 9*/
-    -webkit-transform: scale(5, 5); /*Safari*/
-	transform: rotateY(180deg), scale(5,5);
-transform-origin: 50% 50%;
-	transform-style: preserve-3d;
-	transition: transform 2s;
-    /* transform: scale(5, 5); */
-}
-
-section {
-	/* MAKES ALL PARTS OF THE CARD THIS WIDTH */
-	width: 560px;
-	
-	/* MAKES ALL PARTS OF THE CARD THIS HEIGHT */
-	height: 400px;
-	
-	/* ROUNDS THE CORNERS OF OUR CARD PARTS */
-	border-radius: 10px;
-	
-	/*box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);*/
-}
-
-.sdfdsf {
-	/* MAKES ALL PARTS OF THE CARD THIS WIDTH */
-	width: 560px;
-	
-	/* MAKES ALL PARTS OF THE CARD THIS HEIGHT */
-	height: 400px;
-	
-	/* ROUNDS THE CORNERS OF OUR CARD PARTS */
-	border-radius: 10px;
-	
-	/*box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);*/
-}
-
-.front, .back {
-
-	/* COLORS THE BACKGROUND AND TEXT */
-	background-color: rgb(200,200,200);
-	background-color: rgba(200, 200, 200, 0);
-	color: #4d2600;
-	
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-}
-
-.front {
-
-	/* CENTERS TEXT IN MIDDLE */
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	
-	/* POSITIONS OUR ELEMENT TO BE AT THE TOP LEFT CORNER OF OUR CARD */
+.back{
+	display:none;
 	position:absolute;
-	top:0;
-	left:0;
-	z-index:1;
-	
-}
-
-/*#front.animate > * {
-	/* TELLS THE BROWSER TO MAKE ALL THE CONTENTS OF THE COVER HIDDEN */
-	/*opacity: 0;
-	
-	/* TELLS THE BROWSER TO TAKE 1 SECOND TO HIDE THE CONTENTS */
-	/*transition: opacity 1s;
-/*}*/
-
-/*#front:not(.animate):hover {
-	transform: rotateY(15deg);
-	transform-origin: 50% 50%;
-	transition: transform 0.5s;
-	cursor:grab;
-}*/
-
-/*
-.front img {
-	height: 50%
-}
-
-.front h1 {
-	font-size:32px;
-	margin:0px;
-	margin-left:10px;
-	margin-right:10px;
-}
-
-.front h2 {
-	font-size:18px;
-	margin:0px;
-}
-
-*/
-.back {
-
-	/* CENTERS TEXT IN MIDDLE */
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	
-	/*backdrop-filter: blur(8px);*/
-	
-	/* Card should be rotated from beginning?? */
-	transform: rotateY(180deg);
-	
-	/* Flipped from the middle */
-	/*transform-origin: 50% 50%;*/
-	
-	/*Transparent*/
-	/*opacity: 0;*/
-}
-
-.back h1 {
-	margin: 0;
-}
-
-.back img {
-	height: 60%;
+	background-color:white;
+	opacity:95%;
+	width:500px;
+	height:500px;
+	top:80px;
+	left:500px;
+	margin-right:auto;
+	margin-left:auto;
 }
