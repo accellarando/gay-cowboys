@@ -15,20 +15,18 @@
 	<body>
 		<div class="game-container center">
 			<div id="menu" class="center">
-				<div class="title center">Lavender Saloon</div>
-				<div class="center">
-					<button class="btn center" data-prev="menu" data-next="entrance">ENTER</button>
+				<div class="center" id="menu-btn">
+					<p class="btn center" data-now="menu" onclick="$('#nav-btns').show('slide',{direction:'right'},1000);">ENTER</p>
 				</div>
-				<div class="item" id="enter-ghost">
-					<img src="images/example.png" alt="Ghost"/>
-				</div>
-				<div class="item" id="enter-harry">
-					<img class="item" src="images/example.png" alt="Harry Allen"/>
-				</div>
-			</div>
-			<div id="entrance">
 			</div>
 			<div id="instructions">
+				<div class="center">
+					<h1>Instructions</h1>
+				</div>
+				<div class="instructions">
+					<p>Welcome to the Lavender Saloon!</p><br>
+					<p>It's kinda run down right now. :'( Look for clues about the queer history of the wild west to renovate!</p>
+				</div>
 			</div>
 			<div id="saloon">
 				<div class="item">
@@ -40,10 +38,10 @@
 			</div>
 			<div id="nav-btns">
 				<div class="prev-btn">
-					<button class="btn" data-prev="entrance" data-next="menu">Back</button>
+					<button class="btn" data-now="instructions">Back</button>
 				</div>
 				<div class="next-btn">
-					<button class="btn" data-prev="entrance" data-next="instructions">Next</button>
+					<button class="btn" data-now="instructions">Next</button>
 				</div>
 			</div>
 	</body>
