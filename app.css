@@ -55,9 +55,6 @@
 	text-align:center;
 	margin: 0 auto;
 }
-.item{
-	display:inline-block;
-}
 
 /*** For the menu screen ***/
 #enter-ghost{
@@ -105,3 +102,31 @@
 .item>p{
 	display:none;
 }
+
+/*** Items ***/
+.item{
+	position:absolute;
+	filter: grayscale(100%);
+}
+.item > img{
+	width:100px;
+	cursor:pointer;
+}
+.hat{
+	left:0px;
+	top:0px;
+}
+.pietin{
+	left:0px;
+	top:0px;
+}
+.poem{
+	left:0px;
+	top:0px;
+}
+.mustache{
+	left:0px;
+	top:0px;
+}
+
+
