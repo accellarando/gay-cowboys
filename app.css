@@ -1,8 +1,22 @@
+/***GENERAL CSS FOR THE PAGE ***/
 .game-container{
-	width: 95%;
+	width: 1280px;
+	height: 720px;
+	border:1px solid grey;
+	border-radius:5px;
 }
-#menu{
+.title{
+	font-size:60px;
+}
+.btn{
+	width:200px;
+	height:100px;
+	font-size:20px;
+}
 
+/***Different section containers ***/
+#menu{
+	width:100%;
 }
 #entrance{
 	display:none;
@@ -13,8 +27,23 @@
 #saloon{
 	display:none;
 }
-
-
 .center{
+	text-align:center;
 	margin: 0 auto;
+}
+.item{
+	display:inline-block;
+}
+
+/*** For the menu screen ***/
+#enter-ghost{
+	float:left;
+	width:200px;
+	height:200px;
+}
+
+#enter-harry{
+	float:right;
+	width:200px;
+	height:200px;
 }

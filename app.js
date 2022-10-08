@@ -1,3 +1,4 @@
-function enlarge(obj){
-	$(obj).show("scale",{},1000);
+function focusSection(prevSection,nextSection){
+	$("#"+prevSection).hide("slide",{direction:"left"},1000);
+	$("#"+nextSection).show("slide",{direction:"right"},1000);
 }
