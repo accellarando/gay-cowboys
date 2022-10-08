@@ -5,10 +5,10 @@ function focusSection(thisPage,direction){
 	const nextSection = (direction == "Back") ?
 		sections[indexNow-1] :
 		sections[indexNow+1];
-	console.log(prevSection);
-	console.log(nextSection);
 	const prevDir = direction == "Back" ? "right" : "left";
 	const nextDir = prevDir == "right" ? "left" : "right";
+	if(nextSection == undefined)
+		return;
 	const animationDuration = 1000;
 	if(nextSection == "menu"){
 		$("#nav-btns").hide("slide",{direction:"right"},animationDuration);
