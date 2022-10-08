@@ -1,0 +1,13 @@
+.game-container{
+	width: 95%;
+}
+
+#entrance{
+	display:none;
+}
+#instructions{
+	display:none;
+}
+#saloon{
+	display:none;
+}
