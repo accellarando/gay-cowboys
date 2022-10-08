@@ -36,6 +36,9 @@
 	height:100%;
 	background-size:1280px 720px;
 }
+#end{
+	display:none;
+}
 .center{
 	text-align:center;
 	margin: 0 auto;
