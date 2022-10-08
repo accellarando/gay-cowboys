@@ -50,13 +50,15 @@
 #end{
 	display:none;
 	background-image:url("images/Ending Page.png");
+	width:100%;
+	height:100%;
+	background-size:1280px 720px;
 	position:absolute;
 	top:0;
 	margin-left:auto;
 	margin-right:auto;
 	width:1280px;
 	height:720px;
-	background-size:1280px 720px;
 }
 .center{
 	text-align:center;
