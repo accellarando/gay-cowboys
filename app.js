@@ -32,6 +32,7 @@ $(document).ready(function(){
 function zoomInOn(target) {
 	$(target).parents(".card").removeClass('notClicked');
 	$(target).parents(".card").addClass('zoom');
+	$(target).parents(".card").show();
 
     setTimeout(function() {
         $(target).parents(".card").addClass('zoomed');
@@ -56,14 +57,15 @@ function zoomOut(target) {
 
 function nothingZoomed() {
     return !(
-        $(".obj1").hasClass("zoom") || 
-        $(".obj2").hasClass("zoom") ||
-		$(".obj3").hasClass("zoom") ||
-		$(".obj4").hasClass("zoom")
+        $(".mustache").hasClass("zoom") || 
+        $(".pietin").hasClass("zoom") ||
+		$(".poem").hasClass("zoom") ||
+		$(".hat").hasClass("zoom")
     );
 }
 
 $(document).ready(function(e){
+    // $(".obj1").css("width: 560px; height: 400px;");
 	$(".card").click(function(e) {
 		if ($(e.currentTarget).hasClass("notClicked") && nothingZoomed()) {
 			zoomInOn(e.target);
@@ -78,13 +80,4 @@ $(document).ready(function(e){
             return;
 		}
 	});
-
-	$(".item").click(function(e){
-		if($(e.currentTarget).hasClass("notClicked") && nothingZoomed()){
-			zoomInOn(e.target);
-			return;
-		}
-		$(e.currentTarget).find(".card").show();
-	});
-
 });
