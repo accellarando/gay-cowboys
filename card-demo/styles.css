@@ -1,0 +1,190 @@
+body {
+	/* REMOVES ANY WHITESPACE AROUND THE EDGE */
+	margin: 0;			
+	
+	/* 100% THE WIDTH OF THE PAGE */
+	width:100vw;		
+	
+	/* 100% THE HEIGHT OF THE PAGE */
+	height:100vh;		
+	
+	/* ALLOWS US TO USE THE FLEX BOX SYSTEM TO POSITION OUR CARD */
+	display:flex;			
+	
+	/* PUTS ALL THE ELEMENTS IN THE BODY IN A COLUMN */
+	flex-direction: column;
+	
+	/* PUTS THS CARD VERTICALLY IN THE CENTER */
+	align-items:center;
+	
+	/* PUTS THS CARD HORIZONTALLY IN THE CENTER */
+	justify-content:center; 
+	
+	/* ADDS A GRADIENT BACKGROUND */
+	background: linear-gradient(to top, #f7797d, #FBD786, #C6FFDD);
+	
+	background-image: url("background.jpg");
+	background-size: cover;
+	background-position: center center;
+}
+
+.card {
+	/* APPLIES THIS FONT TO ALL PARTS OF OUR CARD */
+	font-family: 'Peralta', cursive;
+
+	/* SETS THE ORIGIN TO POSITION THINGS RELATIVE TO */
+	/* position:relative; */
+	
+	perspective: 3000px;
+
+    -ms-transform: scale(0.5, 0.5); /* IE 9 */
+    -webkit-transform: scale(0.5, 0.5); /* Safari */
+    transform: scale(0.5, 0.5);
+	
+    transition: transform 2s;
+}
+
+/*#front.animate {*/
+/* .card.zoom { */
+    /* -ms-transform: scale(1, 1); IE 9 */
+    /* -webkit-transform: scale(1, 1); Safari */
+    /* transform: scale(1, 1); */
+    
+    /* transition: transform 2s; */
+/* } */
+
+.card.zoom{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* margin-top: -50%;
+    margin-left: -50%; */
+    transform: translate(-50%, -50%);   
+
+    
+    -ms-transform: scale(1, 1); /* IE 9 */
+    -webkit-transform: scale(1, 1); /* Safari */
+    transform: scale(1, 1);
+    
+    transition: transform 2s;
+}
+
+/*#front.animate {*/
+.card.animate {
+	transform: rotateY(180deg);
+	transform-origin: 50% 50%;
+	transform-style: preserve-3d;
+	transition: transform 2s;
+}
+
+section {
+	/* MAKES ALL PARTS OF THE CARD THIS WIDTH */
+	width: 560px;
+	
+	/* MAKES ALL PARTS OF THE CARD THIS HEIGHT */
+	height: 400px;
+	
+	/* ROUNDS THE CORNERS OF OUR CARD PARTS */
+	border-radius: 10px;
+	
+	/*box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);*/
+}
+
+.sdfdsf {
+	/* MAKES ALL PARTS OF THE CARD THIS WIDTH */
+	width: 560px;
+	
+	/* MAKES ALL PARTS OF THE CARD THIS HEIGHT */
+	height: 400px;
+	
+	/* ROUNDS THE CORNERS OF OUR CARD PARTS */
+	border-radius: 10px;
+	
+	/*box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);*/
+}
+
+.front, .back {
+
+	/* COLORS THE BACKGROUND AND TEXT */
+	background-color: rgb(200,200,200);
+	background-color: rgba(200, 200, 200, 0);
+	color: #4d2600;
+	
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.front {
+
+	/* CENTERS TEXT IN MIDDLE */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+	/* POSITIONS OUR ELEMENT TO BE AT THE TOP LEFT CORNER OF OUR CARD */
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:1;
+	
+}
+
+/*#front.animate > * {
+	/* TELLS THE BROWSER TO MAKE ALL THE CONTENTS OF THE COVER HIDDEN */
+	/*opacity: 0;
+	
+	/* TELLS THE BROWSER TO TAKE 1 SECOND TO HIDE THE CONTENTS */
+	/*transition: opacity 1s;
+/*}*/
+
+/*#front:not(.animate):hover {
+	transform: rotateY(15deg);
+	transform-origin: 50% 50%;
+	transition: transform 0.5s;
+	cursor:grab;
+}*/
+
+.front img {
+	height: 50%
+}
+
+.front h1 {
+	font-size:32px;
+	margin:0px;
+	margin-left:10px;
+	margin-right:10px;
+}
+
+.front h2 {
+	font-size:18px;
+	margin:0px;
+}
+
+.back {
+
+	/* CENTERS TEXT IN MIDDLE */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	
+	/*backdrop-filter: blur(8px);*/
+	
+	/* Card should be rotated from beginning?? */
+	transform: rotateY(180deg);
+	
+	/* Flipped from the middle */
+	/*transform-origin: 50% 50%;*/
+	
+	/*Transparent*/
+	/*opacity: 0;*/
+}
+
+.back h1 {
+	margin: 0;
+}
+
+.back img {
+	height: 60%;
+}
