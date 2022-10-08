@@ -113,20 +113,22 @@
 	cursor:pointer;
 }
 .hat{
-	left:0px;
-	top:0px;
+	left:440px;
+	top:164px;
+	transform:rotate(12deg);
 }
 .pietin{
-	left:0px;
-	top:0px;
+	left:750px;
+	top:327px;
 }
 .poem{
-	left:0px;
-	top:0px;
+	left:1141px;
+	top:445px;
+	transform:rotate(-7deg);
 }
 .mustache{
-	left:0px;
-	top:0px;
+	left:245px;
+	top:431px;
 }
 
 
