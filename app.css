@@ -22,11 +22,13 @@
 	height:100%;
 	background-size:1280px 720px;
 }
-#entrance{
-	display:none;
-}
 #instructions{
 	display:none;
+	position:absolute;
+	top:0;
+	margin-left:auto;
+	margin-right:auto;
+	width:1280px;
 }
 #saloon{
 	display:none;
@@ -35,9 +37,19 @@
 	width:100%;
 	height:100%;
 	background-size:1280px 720px;
+	position:absolute;
+	top:0;
+	margin-left:auto;
+	margin-right:auto;
+	width:1280px;
 }
 #end{
 	display:none;
+	position:absolute;
+	top:0;
+	margin-left:auto;
+	margin-right:auto;
+	width:1280px;
 }
 .center{
 	text-align:center;
