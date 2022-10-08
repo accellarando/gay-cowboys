@@ -4,6 +4,7 @@
 	height: 720px;
 	border:1px solid grey;
 	border-radius:5px;
+	position:relative;
 }
 .title{
 	font-size:60px;
@@ -41,9 +42,24 @@
 	width:200px;
 	height:200px;
 }
-
 #enter-harry{
 	float:right;
 	width:200px;
 	height:200px;
+}
+
+/*** Buttons ***/
+#nav-btns{
+	width:100%;
+	position:absolute;
+	bottom:5px;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+}
+.prev-btn{
+
+}
+.next-btn{
+
 }
