@@ -11,6 +11,7 @@ body {
 	/* ALLOWS US TO USE THE FLEX BOX SYSTEM TO POSITION OUR CARD */
 	display:flex;			
 	
+	position: relative;
 	/* PUTS ALL THE ELEMENTS IN THE BODY IN A COLUMN */
 	flex-direction: column;
 	
@@ -45,32 +46,33 @@ body {
 }
 
 /*#front.animate {*/
- .card.zoom { 
-    -ms-transform: scale(1, 1); /*IE 9*/
-    -webkit-transform: scale(1, 1); /*Safari*/
+ /*.card.zoom { 
+    -ms-transform: scale(1, 1); IE 9
+    -webkit-transform: scale(1, 1); Safari
     transform: scale(1, 1);
     
     transition: transform 2s;
- } 
+ }
+ */
 
-/*
 .card.zoom{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-     margin-top: -50%;
-    margin-left: -50%; 
-    transform: translate(-50%, -50%);   
-
-    
-    -ms-transform: scale(1, 1);
+   position: fixed;
+    /*top: 50%;
+    left: 50%; */
+	display: flex;
+	/*vertical-align: center;*/
+	align-items: center;
+    /*margin-top: auto;
+    margin-left: auto;*/
+  /* transform: translate(0%, -50%);*/
+	-ms-transform: scale(1, 1);
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
     
-    transition: transform 2s;
+    transition: transform 1s;
 }
 
-*/
+
 /*#front.animate {*/
 .card.animate {
 	transform: rotateY(180deg);
