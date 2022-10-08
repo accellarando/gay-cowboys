@@ -1,7 +1,9 @@
 .game-container{
 	width: 95%;
 }
+#menu{
 
+}
 #entrance{
 	display:none;
 }
@@ -10,4 +12,9 @@
 }
 #saloon{
 	display:none;
+}
+
+
+.center{
+	margin: 0 auto;
 }
